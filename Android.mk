@@ -4,6 +4,6 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),sm6225-common)
+ifneq ($(filter fog spes,$(TARGET_DEVICE)),)
 
 endif
